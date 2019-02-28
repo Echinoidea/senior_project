@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
+import 'home_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -10,7 +11,12 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    Timer(Duration(seconds: 3), () => print("End Splash Screen"));
+    Timer(Duration(seconds: 3), () => Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => HomeScreen())
+      )
+    );
   }
 
   @override
@@ -41,6 +47,16 @@ class _SplashScreenState extends State<SplashScreen> {
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 30.0,
+                          color: Colors.redAccent,
+                        ),
+                      ),
+                      Text(
+                        "By Gabriel Hooks",
+                        softWrap: true,
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20.0,
                           color: Colors.redAccent,
                         ),
                       ),
