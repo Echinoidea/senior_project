@@ -20,7 +20,7 @@ class _SplashScreenState extends State<SplashScreen> {
         fit: StackFit.expand,
         children: <Widget>[
           Container(
-            decoration: BoxDecoration(color: Colors.redAccent),
+            decoration: BoxDecoration(color: Colors.white70),
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -31,29 +31,17 @@ class _SplashScreenState extends State<SplashScreen> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      Ink(
-                        decoration: ShapeDecoration(
-                          shape: Border.all(
-                            color: Colors.white,
-                            width: 8.0
-                          ),
-                        ),
-                        child: Column(
-                          children: <Widget>[
-                            Padding(
-                              padding: EdgeInsets.only(top: 10.0),
-                            ),
-                            Text(
-                              "日本語",
-                              softWrap: true,
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 18.0,
-                                color: Colors.white,
-                              ),
-                            ),
-                          ]
+                      Padding(
+                        padding: EdgeInsets.only(top: 10.0),
+                      ),
+                      Text(
+                        "日本語",
+                        softWrap: true,
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 30.0,
+                          color: Colors.redAccent,
                         ),
                       ),
                     ],
@@ -67,22 +55,3 @@ class _SplashScreenState extends State<SplashScreen> {
     );
   }
 }
-/*/*
-                        CircleAvatar(
-                          backgroundColor: Colors.white,
-                          radius: 100.0,
-                          child: Icon(
-                            Icons.brightness_1,
-                            color: Colors.red,
-                            size: 50.0,
-                          ),
-                        ),*/
-
-                      ],
-                    ),
-                  ),
-                )
-              ],
-            )
-          ],
-        )*/
