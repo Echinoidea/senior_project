@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'pages/splash_screen.dart';
-
+import 'pages/quiz_basics_screen.dart';
 
 void main() {
   runApp(new MaterialApp(
-    home: new SplashScreen(),
+    home: new QuizBasicsScreen(),
   ));
 }
