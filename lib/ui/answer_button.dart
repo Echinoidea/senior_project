@@ -1,17 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:senior_project/utils/question.dart';
 
 class AnswerButton extends StatelessWidget{
-  String text = "null";
-  bool isCorrect = false;
+  String _buttonText = ".";
+  bool _isCorrect = false;
+  VoidCallback _onTap;
 
-  AnswerButton(questionText, isCorrect);
+  AnswerButton(_buttonText, _isCorrect, _onTap) {
+    this._buttonText = _buttonText;
+    this._isCorrect = _isCorrect;
+    this._onTap = _onTap;
+  }
 
   @override
   Widget build(BuildContext context) {
     return Expanded(
       child: Material(
-        child: new InkWell(
-          onTap: null, // TODO: Create event
+        child: InkWell(
+          onTap: _onTap, // TODO: Create event
           child: Center(
             child: Container(
               decoration: BoxDecoration(
@@ -22,7 +28,7 @@ class AnswerButton extends StatelessWidget{
               ),
               padding: EdgeInsets.all(20.0),
               child: Text(
-                text,
+                _buttonText,
                 style: TextStyle(
                   fontSize: 20.0,
                   color: Colors.redAccent,
