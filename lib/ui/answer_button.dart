@@ -6,9 +6,9 @@ class AnswerButton extends StatelessWidget{
   bool _isCorrect = false;
   VoidCallback _onTap;
 
-  AnswerButton(_buttonText, _isCorrect, _onTap) {
+  AnswerButton(_buttonText, _onTap) {
     this._buttonText = _buttonText;
-    this._isCorrect = _isCorrect;
+    //this._isCorrect = _isCorrect;
     this._onTap = _onTap;
   }
 
