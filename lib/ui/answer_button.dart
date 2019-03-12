@@ -3,12 +3,12 @@ import 'package:senior_project/utils/question.dart';
 
 class AnswerButton extends StatelessWidget{
   String _buttonText = ".";
-  bool _isCorrect = false;
+  int _correctIndex;
   VoidCallback _onTap;
 
-  AnswerButton(_buttonText, _onTap) {
+  AnswerButton(_buttonText, _correctIndex, _onTap) {
     this._buttonText = _buttonText;
-    //this._isCorrect = _isCorrect;
+    this._correctIndex = _correctIndex;
     this._onTap = _onTap;
   }
 
