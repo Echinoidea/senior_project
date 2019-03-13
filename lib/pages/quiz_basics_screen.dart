@@ -15,7 +15,7 @@ class _QuizBasicsScreenState extends State<QuizBasicsScreen> {
   static final List<Question> _questionList = [
     new Question("日", ["かね", "いぬ", "はし", "にち"], 3),
     new Question("月", ["ねん", "げつ", "はち", "しち"], 1),
-    new Question("火", ["とら", "ひと", "ひ", "いち"], 2);
+    new Question("火", ["とら", "ひと", "ひ", "いち"], 2),
     new Question("水", ["まえ", "みず", "ちち", "きのう"], 1),
     new Question("木", ["かみ", "かね", "き", "なな"], 2),
     new Question("土", ["ど", "にく", "かい", "はは"], 0),
@@ -175,5 +175,3 @@ class _QuizBasicsScreenState extends State<QuizBasicsScreen> {
     return q;
   }
 }
-
-// TODO: On click answerbutton if correct then display overlay and continue. Add score to total score.

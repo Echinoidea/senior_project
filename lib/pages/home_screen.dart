@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'quiz_basics_screen.dart';
+import 'quiz_adjectives_screen.dart';
+import 'quiz_numbers_screen.dart';
+import 'quiz_verbs_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -6,6 +10,36 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+
+  void _navToBasics() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => QuizBasicsScreen()),
+    );
+  }
+
+  void _navToNumbers() {
+    Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => QuizNumbersScreen())
+    );
+  }
+
+  void _navToAdjectives() {
+    Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => QuizAdjectivesScreen())
+    );
+  }
+
+  void _navToVerbs() {
+    Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => QuizVerbsScreen())
+    );
+  }
+
+
   @override
   Widget build(BuildContext context) {
     return Material(
@@ -41,14 +75,14 @@ class _HomeScreenState extends State<HomeScreen> {
                     padding: EdgeInsets.only(top: 30.0)
                 ),
                 InkWell(
-                  onTap: null, // TODO: Navigate to respective quiz page
+                  onTap: _navToBasics,
                   child: Center(
                     child: Container(
                       decoration: BoxDecoration(
                         border: Border.all(
                           color: Colors.red,
                           width: 5.0,
-                        )
+                        ),
                       ),
                       padding: EdgeInsets.all(20.0),
                       child: Text(
@@ -66,31 +100,32 @@ class _HomeScreenState extends State<HomeScreen> {
                     padding: EdgeInsets.only(top: 30.0)
                 ),
                 InkWell(
-                  onTap: null, // TODO: Navigate to respective quiz page
-                  child: Center(
-                    child: Container(
+                  onTap: _navToNumbers,
+                    child: Center(
+                      child: Container(
                       decoration: BoxDecoration(
                         border: Border.all(
-                          color: Colors.red,
-                          width: 5.0,
-                        )
+                        color: Colors.red,
+                        width: 5.0,
+                        ),
                       ),
                       padding: EdgeInsets.all(20.0),
                       child: Text(
                         "Numbers",
                         style: TextStyle(
-                          fontSize: 20.0,
-                          color: Colors.redAccent
+                        fontSize: 20.0,
+                        color: Colors.redAccent
                         ),
+                      ),
                       ),
                     ),
                   ),
-                ),
-                Padding(
-                  padding: EdgeInsets.only(top: 30.0)
-                ),
+                  Padding(
+                    padding: EdgeInsets.only
+                    (top: 30.0)
+                  ),
                 InkWell(
-                  onTap: null, // TODO: Navigate to respective quiz page
+                  onTap: _navToAdjectives,
                   child: Center(
                     child: Container(
                       decoration: BoxDecoration(
@@ -114,7 +149,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   padding: EdgeInsets.only(top: 30.0)
                 ),
                 InkWell(
-                  onTap: null, // TODO: Navigate to respective quiz page
+                  onTap: _navToVerbs,
                   child: Center(
                     child: Container(
                       decoration: BoxDecoration(

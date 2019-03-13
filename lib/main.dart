@@ -5,8 +5,8 @@ import 'utils/question.dart';
 
 void main() {
   runApp(new MaterialApp(
-    home: new QuizBasicsScreen(),
-    //home: new SplashScreen(),
+    //home: new QuizBasicsScreen(),
+    home: new SplashScreen(),
     // home: new HomeScreen(),
   ));
 }

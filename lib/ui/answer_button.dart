@@ -17,7 +17,7 @@ class AnswerButton extends StatelessWidget{
     return Expanded(
       child: Material(
         child: InkWell(
-          onTap: _onTap, // TODO: Create event
+          onTap: _onTap,
           child: Center(
             child: Container(
               decoration: BoxDecoration(
