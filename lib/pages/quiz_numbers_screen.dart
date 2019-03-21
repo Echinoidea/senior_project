@@ -13,16 +13,16 @@ class QuizNumbersScreen extends StatefulWidget {
 class _QuizNumbersScreenState extends State<QuizNumbersScreen> {
 
   static final List<Question> _questionList = [
-    new Question("一", ["かね", "いち", "はし", "にち"], 1),
-    new Question("二", ["ねん", "げつ", "に", "しち"], 2),
-    new Question("三", ["さん", "ひと", "ひ", "いち"], 0),
-    new Question("四", ["まえ", "みず", "ちち", "よん；し"], 3),
-    new Question("五", ["かみ", "かね", "き", "ご"], 3),
-    new Question("六", ["ど", "にく", "ろく", "はは"], 2),
-    new Question("七", ["まえ", "しち；なな", "ねる", "ほん"], 1),
-    new Question("八", ["かね", "おき", "しち", "はち"], 3),
-    new Question("九", ["いぬ", "きく", "はち", "きゅう"], 3),
-    new Question("十", ["じゅう", "なれ", "ねこ", "じゃ"], 0),
+    new Question("一", ["かね; Money", "いち; One", "はし; Chopsticks", "にち; Sun"], 1),
+    new Question("二", ["ねん; Year", "げつ; Month", "に; Two", "しち; Seven"], 2),
+    new Question("三", ["さん; Three", "ひと; Person", "ひ; Fire", "いち; One"], 0),
+    new Question("四", ["まえ; Before", "みず; Water", "ちち; Dad", "よん; Four"], 3),
+    new Question("五", ["いち; One", "に; Two", "き; Tree", "ご; Five"], 3),
+    new Question("六", ["ど; Earth", "ろく; Six", "じゅう; Ten", "はは; Mom"], 2),
+    new Question("七", ["はち; Eight", "しち; Seven", "ねる; To sleep", "ほん; Book"], 1),
+    new Question("八", ["かね; Money", "おおき; Big", "しち; Seven", "はち; Eight"], 3),
+    new Question("九", ["いぬ; Dog", "じゅう; Ten", "はち; Eight", "きゅう; Nine"], 3),
+    new Question("十", ["じゅう; Ten", "ろく; Six", "ねこ; Cat", "ひ; Fire"], 0),
     new Question("", ["", "", "", ""], 0)
   ];
 

@@ -13,16 +13,16 @@ class QuizAdjectivesScreen extends StatefulWidget {
 class _QuizAdjectivesScreenState extends State<QuizAdjectivesScreen> {
 
   static final List<Question> _questionList = [
-    new Question("暖かい", ["あたたかい", "まえ", "はし", "にち"], 0),
-    new Question("暑い", ["ねん", "げつ", "あつい", "かえる"], 2),
-    new Question("寒い", ["むすめ", "ひと", "さむい", "いち"], 2),
-    new Question("涼しい", ["すずしい", "かんじ", "ときょう", "きのう"], 0),
-    new Question("大きい", ["かみ", "かね", "おに", "おおきい"], 3),
-    new Question("小さい", ["ど", "にく", "ちいさい", "あたたかい"], 2),
-    new Question("可愛い", ["かわいい", "ええ", "ちゅうごく", "ほん"], 2),
-    new Question("綺麗", ["きれい", "わたし", "あなた", "かわいい"], 0),
-    new Question("思い", ["おもい", "きく", "せんせい", "いい"], 0),
-    new Question("良い", ["おお", "なれ", "ねこ", "よい"], 3),
+    new Question("暖かい", ["あたたかい; Warm", "まえ; Before", "はし; Chopsticks", "にち; Sun"], 0),
+    new Question("暑い", ["ねん; Year", "げつ; Month", "あつい; Hot", "かえる; Return"], 2),
+    new Question("寒い", ["むすめ; Daughter", "ひと; Person", "さむい; Cold", "いち; One"], 2),
+    new Question("涼しい", ["すずしい; Cool", "かんじ; Chinese characters", "ときょう; Tokyo", "きのう; Yesterday"], 0),
+    new Question("大きい", ["かわいい; Cute", "あたたかい; Warm", "おにい; Older brother", "おおきい; Big"], 3),
+    new Question("小さい", ["ど; Earth", "にく; Meat", "ちいさい; Small", "あたたかい; Warm"], 2),
+    new Question("可愛い", ["かわいい; Cute", "ええ; Yeah", "ちゅうごく; China", "ほん; Book"], 2),
+    new Question("綺麗", ["きれい; Beautiful", "わたし; I/Me", "あなた; You", "かわいい; Cute"], 0),
+    new Question("思い", ["おもい; Heavy", "きく; To hear", "せんせい; Teacher", "いい; Good"], 0),
+    new Question("良い", ["おおき; Big", "なれ; Practice", "ねこ; Cat", "よい; Good"], 3),
     new Question("", ["", "", "", ""], 0)
   ];
 

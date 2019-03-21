@@ -13,16 +13,16 @@ class QuizBasicsScreen extends StatefulWidget {
 class _QuizBasicsScreenState extends State<QuizBasicsScreen> {
 
   static final List<Question> _questionList = [
-    new Question("日", ["かね", "いぬ", "はし", "にち"], 3),
-    new Question("月", ["ねん", "げつ", "はち", "しち"], 1),
-    new Question("火", ["とら", "ひと", "ひ", "いち"], 2),
-    new Question("水", ["まえ", "みず", "ちち", "きのう"], 1),
-    new Question("木", ["かみ", "かね", "き", "なな"], 2),
-    new Question("土", ["ど", "にく", "かい", "はは"], 0),
-    new Question("本", ["まえ", "ええ", "ねる", "ほん"], 3),
-    new Question("金", ["かね", "おき", "しち", "ねこ"], 0),
-    new Question("犬", ["いぬ", "きく", "はち", "いい"], 0),
-    new Question("猫", ["おお", "なれ", "ねこ", "じゃ"], 2),
+    new Question("日", ["かね; Money", "いぬ; Dog", "はし; Chopsticks", "にち; Sun"], 3),
+    new Question("月", ["ねん; Year", "げつ; Month", "はち; Eight", "しち; Seven"], 1),
+    new Question("火", ["とら; Tiger", "ひと; Person", "ひ; Fire", "いち; One"], 2),
+    new Question("水", ["まえ; Before", "みず; Water", "ちち; Dad", "きのう; Yesterday"], 1),
+    new Question("木", ["かみ; Paper", "かね; Money", "き; Tree", "あう; Blue"], 2),
+    new Question("土", ["ど; Earth", "にく; Meat", "かい; Shellfish", "はは; Mom"], 0),
+    new Question("本", ["まえ; Before", "ええ; Yeah", "ねる; To sleep", "ほん; Book"], 3),
+    new Question("金", ["かね; Money", "おきる; To get up", "しち; Seven", "ねこ; Cat"], 0),
+    new Question("犬", ["いぬ; Dog", "きく; To hear", "はち; Eight", "いい; Good"], 0),
+    new Question("猫", ["おおき; Big", "はし; Chopsticks", "ねこ; Cat", "ひ; Fire"], 2),
     new Question("", ["", "", "", ""], 0)
   ];
 
