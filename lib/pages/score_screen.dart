@@ -11,7 +11,7 @@ class ScoreScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Material(
-      color: Colors.blueAccent,
+      color: Colors.redAccent,
       child: new Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[

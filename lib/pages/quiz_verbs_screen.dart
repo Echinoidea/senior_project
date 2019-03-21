@@ -13,16 +13,16 @@ class QuizVerbsScreen extends StatefulWidget {
 class _QuizVerbsScreenState extends State<QuizVerbsScreen> {
 
   static final List<Question> _questionList = [
-    new Question("食べ", ["たべる", "いぬ", "ねる", "おおきい"], 0),
-    new Question("寝る", ["ねん", "ねる", "ちゅうごく", "しち"], 1),
-    new Question("飲む", ["のむ", "おきる", "おまえ", "いち"], 0),
-    new Question("出かける", ["でかける", "みず", "です", "きのう"], 0),
-    new Question("起きる", ["かみ", "おきる", "聞く", "なな"], 1),
-    new Question("来る", ["くる", "おとこ", "かい", "ひと"], 0),
-    new Question("掃除する", ["リンゴ", "そうじする", "にほんご", "ほん"], 1),
-    new Question("見る", ["かね", "みる", "そうじする", "アメリカ"], 1),
-    new Question("読む", ["よい", "きく", "あたたかい", "よみ"], 3),
-    new Question("買う", ["おお", "はい", "さむい", "かう"], 3),
+    new Question("食べ", ["たべる; To eat", "いぬ; Dog", "ねる; To sleep", "おおき; Big"], 0),
+    new Question("寝る", ["ねん; Year", "ねる; To sleep", "ちゅうごく; China", "しち; Seven"], 1),
+    new Question("飲む", ["のむ; To drink", "おきる; To get up", "でかける; To go out", "いち; One"], 0),
+    new Question("出かける", ["でかける; To go out", "みず; Water", "です; To be", "きのう; Yesterday"], 0),
+    new Question("起きる", ["ねこ; Cat", "おきる; To get up", "聞く; To listen", "しち; Seven"], 1),
+    new Question("来る", ["くる; To come", "おとこ; Man", "パソコン; Computer", "ひと; Person"], 0),
+    new Question("掃除する", ["リンゴ; Apple", "そうじする; To clean", "にほんご; Japanese", "ほん; Book"], 1),
+    new Question("見る", ["かね; Money", "みる; To see", "そうじする; To clean", "アメリカ; America"], 1),
+    new Question("読む", ["よい; Good", "きく; To hear", "あたたかい; Warm", "よみ; Read"], 3),
+    new Question("買う", ["おきる; To get up", "はい; Yes", "さむい; Cool", "かう; To buy"], 3),
     new Question("", ["", "", "", ""], 0)
   ];
 
