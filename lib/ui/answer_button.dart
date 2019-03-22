@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:senior_project/utils/question.dart';
-import 'package:audioplayers/audioplayers.dart';
+
 
 class AnswerButton extends StatelessWidget{
   String _buttonText = ".";
   int _correctIndex;
   VoidCallback _onTap;
 
-  final AudioPlayer audioPlayer = new AudioPlayer();
-
   AnswerButton(_buttonText, _correctIndex, _onTap) {
     this._buttonText = _buttonText;
     this._correctIndex = _correctIndex;
     this._onTap = _onTap;
   }
+
+
 
   @override
   Widget build(BuildContext context) {
