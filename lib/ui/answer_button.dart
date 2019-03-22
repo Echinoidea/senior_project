@@ -13,8 +13,6 @@ class AnswerButton extends StatelessWidget{
     this._onTap = _onTap;
   }
 
-
-
   @override
   Widget build(BuildContext context) {
     return Expanded(
