@@ -4,6 +4,8 @@ import 'package:senior_project/ui/answer_button.dart';
 import 'package:senior_project/ui/correct_wrong_overlay.dart';
 import 'score_screen.dart';
 import 'dart:collection';
+import 'package:audioplayers/audioplayers.dart';
+import 'package:audioplayers/audio_cache.dart';
 
 class QuizNumbersScreen extends StatefulWidget {
   @override
@@ -35,13 +37,26 @@ class _QuizNumbersScreenState extends State<QuizNumbersScreen> {
   bool _overlayShouldBeVisible = false;
   bool _isCorrect = false;
 
+  final AudioCache _audioCache = new AudioCache();
+
+  _playCorrect() async {
+    await _audioCache.play("correct_sfx.wav");
+  }
+
+  _playIncorrect() async {
+    await _audioCache.play("incorrect_sfx.wav");
+  }
+
+
   void _handleAnswer(int selected) {
 
     if (selected == _currentQuestion.correctIndex) {
       _isCorrect = true;
+      _playCorrect();
     }
     else {
       _isCorrect = false;
+      _playIncorrect();
     }
 
     if (_isCorrect) {

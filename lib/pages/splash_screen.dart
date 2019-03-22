@@ -71,4 +71,3 @@ class _SplashScreenState extends State<SplashScreen> {
     );
   }
 }
-// TODO: Disable returning back to splash screen
