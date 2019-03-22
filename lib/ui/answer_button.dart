@@ -1,15 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:senior_project/utils/question.dart';
-
 
 class AnswerButton extends StatelessWidget{
   String _buttonText = ".";
-  int _correctIndex;
   VoidCallback _onTap;
 
   AnswerButton(_buttonText, _correctIndex, _onTap) {
     this._buttonText = _buttonText;
-    this._correctIndex = _correctIndex;
     this._onTap = _onTap;
   }
 

@@ -4,7 +4,6 @@ import 'package:senior_project/ui/answer_button.dart';
 import 'package:senior_project/ui/correct_wrong_overlay.dart';
 import 'score_screen.dart';
 import 'dart:collection';
-import 'package:audioplayers/audioplayers.dart';
 import 'package:audioplayers/audio_cache.dart';
 
 class QuizAdjectivesScreen extends StatefulWidget {

@@ -4,6 +4,8 @@ import 'quiz_adjectives_screen.dart';
 import 'quiz_numbers_screen.dart';
 import 'quiz_verbs_screen.dart';
 
+/// The HomeScreen contains the buttons that navigate to each respective quiz.
+/// When the quiz is done, the user will return to this page.
 class HomeScreen extends StatefulWidget {
   @override
   _HomeScreenState createState() => new _HomeScreenState();
@@ -11,6 +13,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
 
+  /// Each of these methods are used to navigate to its respective quiz page.
   void _navToBasics() {
     Navigator.push(
       context,

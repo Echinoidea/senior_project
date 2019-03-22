@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 import 'home_screen.dart';
 
+/// SplashScreen is the first page to be displayed. It remains on screen for 3
+/// seconds, then navigates to HomeScreen.
 class SplashScreen extends StatefulWidget {
   @override
   _SplashScreenState createState() => _SplashScreenState();
@@ -11,6 +13,8 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
+
+    // Wait 3 seconds before navigating to HomeScreen.
     Timer(Duration(seconds: 3), () => Navigator.push(
       context,
       MaterialPageRoute(
@@ -19,6 +23,7 @@ class _SplashScreenState extends State<SplashScreen> {
     );
   }
 
+  /// This build actual layout of the SplashScreen.
   @override
   Widget build(BuildContext context) {
     return Scaffold(
